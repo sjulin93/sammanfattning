@@ -1,1 +1,161 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inlämning Simon Sjulin</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div>
+        <h1>Inlämningsuppgift</h1>
+      </div>
+      <div class="text-content">
+        <div class="box">
+          <div class="answer-content">
+            <h2>Github-Flow</h2>
+            <p>
+              Github-flödet är till för att underlätta arbetet av en
+              webbapplikation/program etc - både när man arbetar själv men även
+              när fler är involverade. Låt oss säga att vi är 3st som ska skapa
+              en hemsida. Vi delar upp arbetsuppgifterna så att alla ska göra
+              var sin undersida. Vi leker med tanken att index.html redan är
+              skapad och klar. Projektledaren kan då t ex säga vem som ska göra
+              vilken sida. Man börjar med att kopiera sitt
+           
+                repo > skapar en ny bransch med “git checkout -b
+                *branchnamnet*
+              >. Allt vi gör i denna branchen är endast för oss själva nu tills
+              det att vi add > commit > push i terminalen. När detta är
+              gjort så kan man sedan begära en s.k “Merge”. Där kollar
+              sedan projektledaren över din kod - skriver en kommentar om att
+              “det ser bra ut merga på!” t ex eller så kanske det är ändringar
+              som måste göras först innan vi kan merga. Tanken med githubflödet
+              är att få mer struktur i det hela. Det kan lätt bli rörigt annars
+              så detta är ett verktyg för att istället få ett plockipinn med
+              massa små färger på pinnar överallt så är det organiserat så att
+              alla röda pinnar ligger för sig.
+            </p>
+          </div>
+          <div class="answer-content">
+            <h2>Flexbox</h2>
+            <p>
+              När man skapar en sida så är det viktigt att göra den
+             responsiv
+              (anpassad till olika storlekar av skärmar, t ex mobil, ipad,
+              dator). Man kan antingen använda sig av ramverk (t ex bootstrap)
+              eller för mindre applikationer så kan du använda dig av flexbox.
+              Flexbox är något du implementerar i din CSS för att göra din sida
+              responsiv. Jag brukar tänka att jag delar upp min sida i flera
+              olika boxar - inne i de boxarna kanske det finns annat innehåll
+              som jag vill dela upp i boxar i sin tur för att placera på ett
+              visst sätt (tex ska det vara bilder som placeras från vänster till
+              höger osv). Dessutom måste man ju då tänka på “ja men vad händer
+              om man kollar på en mobil, eller en ipad? Ser det annorlunda ut
+              då?”. Ja naturligtvis vill vi inte att allt ska bli hullerombuller
+              bara för vi byter plattform. Därför använder vi flexbox - för att
+              då kan vi kontrollera hur det ska bli även när vi använder en
+              större ELLER mindre skärm UTAN att använda något större ramverk.
+            </p>
+          </div>
+          <div class="answer-content">
+            <h2>DOM</h2>
+            <p>
+              DOM (Document object model) är ett sätt för att manipulera din
+              hemsida kan man säga. Detta görs oftast via javascript men du kan
+              också gå in i console läget i chrome-dev tool för att temporärt
+              ändra något på en sida (kanske för att göra ett prank till en
+              kompis t ex). Tanken är att med dom så kan du rikta in dig på
+              specifika element i din html och manipulera den biten kod till att
+              agera på ett visst sätt eller till och med lägga till/ta bort
+              bitar av kod. Du kan också sätta färg/manipulera cssen på olika
+              bitar kod med hjälp av DOM. När man tänker DOM så måste man se
+              html-koden som ett familjeträd kan man säga. Som i alla
+              familjeträd finns det olika grenar, föräldrar och barn. Det är
+              dessa vi kan ändra/lägga till med DOM. För att manipulera html
+              koden med dom så kan man t ex ange klasser till sin kod. Låt oss
+              säga att vi vill rikta in oss på en paragraf som vi har gett
+              klassen “paragraf” och gett en variabel detta värdet. Då hade vi
+              gjort följande: let paragraf = document.querySelector(“paragraf”);
+              paragraf.innerHTML=”nu har vi ändrat denna html-koden”. Så det vi
+              gör då är att vi först pekar ut vår paragraf i vårt lilla träd för
+              att sedan byta ut så att istället för det stod fel namn där så har
+              vi ändrat så det står rätt.
+            </p>
+            <img src="dom.png" alt="DOM" />
+          </div>
+          <div class="answer-content">
+            <h2>Fin kod</h2>
+            <p>
+              I sin korthet så betyder b fin kod att det ska vara
+              enkelt för andra utvecklare att följa strukturen i din kod. Det
+              kan vara allt från att du bygger din css fil så att den följer
+              html-flödet uppifrån och ner till att i din javascript så har du
+              deklarerat allt variablar på samma ställe för att det ska vara
+              enkelt att hitta. Tanken med fin kod är att både du och dina
+              kollegor ska kunna öppna koden efter ett år eller två och enkelt
+              kunna felsöka/ändra olika delar i koden genom att snabbt hitta det
+              man söker som resultat av att du har varit
+             organiserad från början.
+            </p>
+          </div>
+          <div class="answer-content">
+            <h2>Ramverk</h2>
+            <p>
+              Ramverk är egentligen bara återanvändning av någon annans kod. Det
+              kan vara kod som gör är förkortningar av längre bitar kod (t ex
+              jquery) eller kod som stylar din sida där någon annan har gjort
+              hela cssen tidigare utan att du egentligen behöver koda någon css
+              alls eftersom du använder detta ramverket. Jag har valt två
+              exempel i form av jquery och bootstrap.
+            </p>
+            <h3>Bootstrap</h3>
+            <p>
+              Personligen gillar jag använda bootstrap på projekt där jag snabbt
+              vill ha ut en hemsida utan att behöva jobba för mycket själv med
+              css/html. Jag brukar kopiera in länkarna som finns på
+              <a
+                href="https://getbootstrap.com/docs/5.2/getting-started/download/"
+                >getbootstrap</a
+              >
+              som då gäller båda JS och html/css. Därefter är det egentligen
+              bara att copypaste. Bootstrapkoden kan du sedan förändra/styla med
+              hjälp av egen css men den huvudsakliga koden som utgör den kod som
+              är förskriven är dess klasser. Så i dessa klasser finns kod som
+              någon annan skrivit. T ex om jag vill ha två flexboxar så kan jag
+              använda klasserna “row” och “col” i olika divs utan att gå in på
+              det för djupt. Det går även skapa större saker så som en karusell
+              etc med förskriven kod där du sedan bara kan lägga till ditt
+              innehåll. I det stora hela så sparar det otroligt mycket tid.
+            </p>
+            <h3>Jquery</h3>
+            <p>
+              Jquery är ett biblotek för javascript. Tanken med detta är att det
+              ska bli mindre kod och en spara in tid (som med alla
+              ramverk/biblotek). Han som uppfann jquery var en student som hette
+              John Resig. Han var trött på att behöva skriva så mycket kod för
+              att manipulera sin kod med DOM så han skapade därför jquery precis
+              som människan uppfann hjulet. Tanken är att istället för skriva t
+              ex let random = document.querySelector(“klass”); så ska det räcka
+              med att skriva let random = $(“klass”); Jquery används i nästan en
+              fjärdedel av alla hemsidor idag.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3>Referenser: </h3>
+      <ul>
+        <li><a href="https://docs.github.com/en/get-started/quickstart/github-flow">Github</a></li>
+        <li><a href="https://ju.instructure.com/courses/8865/pages/github-arbetsflode-vanligtvis-kallat-gitflow?module_item_id=222249">Canvas</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">DOM</a></li>
+        <li><a href="https://getbootstrap.com/docs/5.2/layout/columns/"></a>Bootstrap</li>
+        <li><a href="https://getbootstrap.com/docs/5.2/getting-started/download">Bootstrap Download</a></li>
+        <li><a href="https://jquery.com/">Jquery</a></li>
+        <li><a href="https://www.rit.edu/simonecenter/innovation-hall-of-fame/john-resig?inductee=10">Jquery historia</a></li>
+        <li><a href="https://www.linode.com/docs/guides/traversing-the-dom/">Bild för DOM</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
